@@ -108,7 +108,7 @@ __justifiedGallery_galleryID = 0;
             ris += "  <img alt=\"" + image["alt"] + "\" src=\"" + image["src"] + suffix + settings.extension + "\"";
             ris +=        "style=\"width: " + nw + "px; height: " + nh + "px;\">";
 
-            if(settings.captions)
+            if(settings.captions && image["alt"])
                 ris += "  <div style=\"bottom:" + (nh - minRowHeight) + "px;\" class=\"jg-image-label\">" + image["alt"] + "</div>";
 
             ris += " </a></div>";
